@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{template}">
+
+<head>
+	<meta charset="utf-8">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+	<title>Error</title>
+</head>
+
+<body>
+	<div layout:fragment="Mycontent">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="error-template">
+						<h1>
+							Oops!</h1>
+						<h2>
+							You don't have access !</h2>
+						<div class="error-details">
+							Sorry, an error has occured, Requested page not found!
+						</div>
+						<div class="error-actions">
+							<a href="http://localhost:8080/produits/ListeProduits" class="btn btn-primary btn-lg"><span
+									class="glyphicon glyphicon-home"></span>
+								Take Me Home </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
